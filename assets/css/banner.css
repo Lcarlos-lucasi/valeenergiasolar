@@ -1,0 +1,51 @@
+.banner {
+    position:relative;
+}
+
+.banner__img {
+    height: calc(100vh - 72px);
+    width: 100%;
+
+    background: url(../img/Foto_Energia_solar_residencial.webp) no-repeat center / cover ;
+    /*background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+}
+
+.banner__titulo {
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 0) {
+    .banner__titulo {
+        font-size: 3rem;
+    }
+
+    .banner__img{
+        height: calc(100vh - 51px);  
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .banner__titulo {
+        font-size: 5rem;
+    }
+
+    .banner__img{
+        height: calc(100vh - 72px);  
+    }
+
+    
+}
